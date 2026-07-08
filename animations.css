@@ -72,14 +72,15 @@
 
 /* Лёгкая последовательная задержка для групп карточек (stagger) */
 .stagger > * { opacity: 0; }
-.stagger.is-visible > *:nth-child(1) { animation: fade-up 0.8s var(--ease-out) forwards 0.05s; }
-.stagger.is-visible > *:nth-child(2) { animation: fade-up 0.8s var(--ease-out) forwards 0.15s; }
-.stagger.is-visible > *:nth-child(3) { animation: fade-up 0.8s var(--ease-out) forwards 0.25s; }
-.stagger.is-visible > *:nth-child(4) { animation: fade-up 0.8s var(--ease-out) forwards 0.35s; }
-.stagger.is-visible > *:nth-child(5) { animation: fade-up 0.8s var(--ease-out) forwards 0.45s; }
-.stagger.is-visible > *:nth-child(6) { animation: fade-up 0.8s var(--ease-out) forwards 0.55s; }
-.stagger.is-visible > *:nth-child(7) { animation: fade-up 0.8s var(--ease-out) forwards 0.65s; }
-.stagger.is-visible > *:nth-child(8) { animation: fade-up 0.8s var(--ease-out) forwards 0.75s; }
+.stagger.is-visible > * { animation: fade-up 0.8s var(--ease-out) forwards 0.85s; }
+.stagger.is-visible > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger.is-visible > *:nth-child(2) { animation-delay: 0.15s; }
+.stagger.is-visible > *:nth-child(3) { animation-delay: 0.25s; }
+.stagger.is-visible > *:nth-child(4) { animation-delay: 0.35s; }
+.stagger.is-visible > *:nth-child(5) { animation-delay: 0.45s; }
+.stagger.is-visible > *:nth-child(6) { animation-delay: 0.55s; }
+.stagger.is-visible > *:nth-child(7) { animation-delay: 0.65s; }
+.stagger.is-visible > *:nth-child(8) { animation-delay: 0.75s; }
 
 /* Буквенная анимация заголовка героя — управляется hero.js через style="--d:" */
 .split-text.is-visible span {
